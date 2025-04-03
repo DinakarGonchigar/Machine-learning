@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official landing page of the Blue Black Team. Showcasing projects, team members, and contact details.">
+    <title>Blue Black Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+        .logo span {
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(254, 255, 255);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .hero {
+            padding: 100px 20px;
+            background: linear-gradient(to right, #000, #001f3f);
+        }
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .cta-button {
+            background-color: #00f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project-grid, .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .project, .team-member {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+        }
+        .project img, .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+        .social-links img {
+            width: 30px;
+            height: auto;
+        }
+        footer {
+            padding: 20px;
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Blue Black Team Logo">
+            <span>Blue Black Team</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <img src="home.jpg" alt="Hero Image">
+        <h1>Pioneering the Future with Technology</h1>
+<p>At Blue Black Team, we merge innovation with expertise to shape tomorrow’s digital landscape.</p>
+
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The Blue Black Team is a collective of tech enthusiasts, innovators, and problem-solvers dedicated to crafting groundbreaking digital solutions. Our mission is to bridge the gap between cutting-edge technology and real-world challenges, delivering innovative applications that enhance lives and businesses.</p>
+        <p>With expertise in artificial intelligence, web development, cybersecurity, and data science, we take pride in designing and developing projects that drive meaningful impact. Collaboration, creativity, and a relentless pursuit of excellence define who we are. Join us on this journey as we push the boundaries of technology.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="smart-health.jpg" alt="Project 1">
+                <h3>Smart  App</h3>
+                <p>A digital  solution improving customer and developer interactions.</p>
+            </div>
+            <div class="project">
+                <img src="ai-chat.jpg" alt="Project 2">
+                <h3>AI Chatbot</h3>
+                <p>An intelligent chatbot for  support and guidance.</p>
+            </div>
+            <div class="project">
+                <img src="e-learning.jpg" alt="Project 3">
+                <h3>E-Learning Platform</h3>
+                <p>An interactive platform enhancing online learning experiences.</p>
+            </div>
+        </div>
+        <a href="#" class="cta-button">View All Projects</a>
+    </section>
+    
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="alex-carter.jpg" alt="Alex Carter">
+                <h3>Alex Carter</h3>
+                <p>CEO & Visionary</p>
+                <p>Alex is a forward-thinking entrepreneur with a decade of experience in tech startups. Passionate about innovation, he leads the team with a vision to push boundaries and create impact.</p>
+            </div>
+            <div class="team-member">
+                <img src="sophia-ramirez.jpg" alt="Sophia Ramirez">
+                <h3>Sophia Ramirez</h3>
+                <p>Chief Technology Officer</p>
+                <p>A machine learning expert, Sophia has worked on AI-driven projects that have revolutionized industries. She ensures that the Blue Black Team stays ahead with cutting-edge technology.</p>
+            </div>
+            <div class="team-member">
+                <img src="ethan-williams.jpg" alt="Ethan Williams">
+                <h3>Ethan Williams</h3>
+                <p>Lead Product Designer</p>
+                <p>With a background in UX/UI design, Ethan crafts intuitive digital experiences. His designs focus on both functionality and aesthetics, ensuring every product is user-friendly and engaging.</p>
+            </div>
+            <div class="team-member">
+                <img src="liam-chen.jpg" alt="Liam Chen">
+                <h3>Liam Chen</h3>
+                <p>Head of Development</p>
+                <p>A full-stack developer with expertise in web and mobile applications, Liam is dedicated to building scalable and efficient tech solutions.</p>
+            </div>
+            <div class="team-member">
+                <img src="isabella-ford.jpg" alt="Isabella Ford">
+                <h3>Isabella Ford</h3>
+                <p>Marketing & Strategy Lead</p>
+                <p>Isabella bridges the gap between technology and business. With a keen sense of market trends, she drives brand strategy and ensures products reach the right audience.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><img src="Twitter-icon.png" alt="Twitter"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.jpg" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2025 Blue Black Team. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
 
